@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      
+      <div class="Page1" id="Page1">
+        <div class="sidenav">
+            <a href="My Name">My Name</a>
+            <a href="My score">My score</a>
+          </div>
+    
+        <div class="h1"><h1>ََQuizz</h1> </div>
+
+
+<div class="h2" id="h2" > <h2>Breif Description </h2> 
+      <p class="p">You must  enter your name, then there is 10 random MC questions with 4 options to each question and only one right answer</p> 
+      
+      
+
+    </div>
+
+
+      <button class="button" onclick="start('Page1','Page2')" data-id="0"> start Game</button>
+      </div>
+
+    <div id="Page2" style="display: none;">
+        <div class="Name-page">
+            <form name="Name-page">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Enter Your name..">
+            
+            </form>
+        </div>
+        
+        <button  class="button"onclick="start ('Page2','Page3')" data-id="0"> Next</button>
+    
+
+    </div>
+        <div id="Page3" style="display: none;">
+            <h1>
+                Q1 
+            </h1>
+            <button class="button" onclick="start('Page3','Page4')" data-id="0"> Next</button>
+        </div>
+        <div id="Page4" style="display: none;">
+            <h1>
+                Q2 
+            </h1>
+            <button class="button" onclick="start('Page4','Page5')" data-id="0"> Next</button>
+        </div>
+        <div id="Page5" style="display: none;">
+            <h1>
+                Q3 
+            </h1>
+            <button class="button" onclick="start('Page5','Page6')" data-id="0"> Next</button>
+        </div>
+        <div id="Page6" style="display: none;">
+            <h1>
+                Q4
+            </h1>
+            <button class="button" onclick="start('Page6','Page7')" data-id="0"> Next</button>
+        </div>
+        <div id="Page7" style="display: none;">
+            <h1>
+                Q5
+            </h1>
+            <button class="button" onclick="start('Page7','Page8')" data-id="0"> Next</button>
+        </div>
+        <div id="Page8" style="display: none;">
+            <h1>
+                Q6 
+            </h1>
+            <button class="button" onclick="start('Page8','Page9')" data-id="0"> Next</button>
+        </div>
+        <div id="Page9" style="display: none;">
+            <h1>
+                Q7
+            </h1>
+            <button class="button" onclick="start('Page9','Page10')" data-id="0"> Next</button>
+        </div>
+        <div id="Page10" style="display: none;">
+            <h1>
+                Q8
+            </h1>
+            <button class="button" onclick="start('Page10','Page11')" data-id="0"> Next</button>
+        </div>
+        <div id="Page11" style="display: none;">
+            <h1>
+                Q9
+            </h1>
+            <button class="button" onclick="start('Page11','Page12')" data-id="0"> Next</button>
+        </div>
+        <div id="Page12" style="display: none;">
+            <h1>
+                Q10
+            </h1>
+            <button class="button" onclick="start('Page12','Page1')" data-id="0"> End</button>
+        </div>
+    
+      <script src="script.js"></script>
+
+
+    </body>
+    </html>
