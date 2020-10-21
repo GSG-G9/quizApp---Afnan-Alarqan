@@ -5,10 +5,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     </head>
     <body>
-      
+        <div id="result"></div>
+
       <div class="Page1" id="Page1">
-        <div class="sidenav">
-            <a href="My Name">My Name</a>
+        <div class="sidenav" id="leaderBoard" style="display: none;">
+            <h2 class="inputName" id="name"></h2> 
             <a href="My score">My score</a>
           </div>
     
@@ -29,75 +30,45 @@
     <div id="Page2" style="display: none;">
         <div class="Name-page">
             <form name="Name-page">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Enter Your name..">
-            
-            </form>
-        </div>
-        
-        <button  class="button"onclick="start ('Page2','Page3')" data-id="0"> Next</button>
-    
+              <label for="fname">Your Name</label>
+              <input type="text" id="myText" value="Afnan" placeholder="Enter Your name..">
+              <!-- <button type="button" onclick="getInputValue();">Register</button> -->
 
+              <p id="demo"></p></form>
+        </div>
+        <button  class="button" onclick="getInputValue('Page2','Page3')" > Next</button>
+
+        
     </div>
         <div id="Page3" style="display: none;">
-            <h1>
-                Q1 
+            <h1 id="number">
+                
             </h1>
-            <button class="button" onclick="start('Page3','Page4')" data-id="0"> Next</button>
+            <div id="questions">
+
+            </div>
+            <div id="options">
+                    
+            </div>
+            <ul id="optionList">
+
+            </ul>
+            <button class="button" onclick="questionsView('Page3','Page1')" data-id="0"> Next</button>
         </div>
-        <div id="Page4" style="display: none;">
-            <h1>
-                Q2 
-            </h1>
-            <button class="button" onclick="start('Page4','Page5')" data-id="0"> Next</button>
-        </div>
-        <div id="Page5" style="display: none;">
-            <h1>
-                Q3 
-            </h1>
-            <button class="button" onclick="start('Page5','Page6')" data-id="0"> Next</button>
-        </div>
-        <div id="Page6" style="display: none;">
-            <h1>
-                Q4
-            </h1>
-            <button class="button" onclick="start('Page6','Page7')" data-id="0"> Next</button>
-        </div>
-        <div id="Page7" style="display: none;">
-            <h1>
-                Q5
-            </h1>
-            <button class="button" onclick="start('Page7','Page8')" data-id="0"> Next</button>
-        </div>
-        <div id="Page8" style="display: none;">
-            <h1>
-                Q6 
-            </h1>
-            <button class="button" onclick="start('Page8','Page9')" data-id="0"> Next</button>
-        </div>
-        <div id="Page9" style="display: none;">
-            <h1>
-                Q7
-            </h1>
-            <button class="button" onclick="start('Page9','Page10')" data-id="0"> Next</button>
-        </div>
-        <div id="Page10" style="display: none;">
-            <h1>
-                Q8
-            </h1>
-            <button class="button" onclick="start('Page10','Page11')" data-id="0"> Next</button>
-        </div>
-        <div id="Page11" style="display: none;">
-            <h1>
-                Q9
-            </h1>
-            <button class="button" onclick="start('Page11','Page12')" data-id="0"> Next</button>
-        </div>
+    
         <div id="Page12" style="display: none;">
             <h1>
-                Q10
+                End Game
             </h1>
-            <button class="button" onclick="start('Page12','Page1')" data-id="0"> End</button>
+            <div id="questions">
+
+            </div>
+            <div id="options">
+                    <ul id="optionList">
+
+                    </ul>
+            </div>
+            <button class="button" onclick="getInputValue('Page12','Page1')" data-id="0"> End Game</button>
         </div>
     
       <script src="script.js"></script>
